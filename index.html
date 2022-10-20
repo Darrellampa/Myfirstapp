@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web Activity">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="darrel lampa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "site" content = "5" />
+    <link rel="stylesheet" href="style.css">
+    <title>Form Act 2</title>
+    <style>
+        body{text-align: center;}
+        h1{
+            color: brown;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+<img src="imageACT2.png" width="150" height="150">
+<article id="header">
+    <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+                <img src="Logo.png" alt="">
+            </div>
+            <div class="nav-list">
+                
+                <a href="home">Home</a></li>
+                <a href="city">City</a></li>
+                <a href="location">Location</a></li>
+               
+            </div>
+        </div>
+    </div>
+</article>
+    <form action="post">
+    <article>
+    <h1>Book A Trip</h1>
+   </article>
+   <article>
+
+ Book A Date <input type="date" value="2022-10-20" min="2022-10-20" max="2022-12-21">
+   </article>
+<br>
+
+    <article>
+ Number Of People <input type="range" min="1" max="10" value="2" oninput ="this.nextElementSibling.value=this.value"> <output>2</output>
+   </article>
+<br>
+
+    <article>
+Location <input list="Location" name="Location">
+  <datalist id="Location">
+    <option value="Downtown">
+    <option value="Uptown">
+  </datalist>
+<br>
+
+  <video width="320" height="240" controls muted>
+    <source src="video.mp4" type="video/mp4">
+    </article>
+    
+    Rating<input type="range" id="rate" name="rating" list="tickmarks" step="25" />
+    <datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="25"></option>
+    <option value="50"></option>
+    <option value="75"></option>
+    <option value="100"></option>
+     </datalist>
+ <br>
+ <br>
+    <input type="checkbox"id="check" >
+      <label for="check">i agree to the cancelation policy</label></br>
+ <br>
+ 
+    <button type="button">Book Table</button>
+    <article id="footer">
+
+        
+        <br>
+        <br>
+        <div class="footer container">
+            <p>Copyright © 2022 Darrel lampa made with ❤️</p>
+        </div>
+    </article>
+
+</body>
+</html>
